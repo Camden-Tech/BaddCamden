@@ -1,0 +1,80 @@
+ body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.page-header {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 24px;
+  background-color: #f0f0f0;
+  margin-bottom: 20px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Full width to utilize the available space */
+  max-width: 1600px; /* Adjust based on your maximum layout width */
+  margin: 0 auto; /* Center the container */
+}
+
+.ads-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ad {
+  background-color: aqua;
+  width: 300px; /* Adjust based on your needs */
+  height: 200px;
+  margin: 20px 0; /* Space between ads */
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  max-width: 500px; /* Adjust based on your form size */
+}
+
+.input-field, .submit-button {
+  padding: 10px;
+  margin: 20px 0;
+  min-width: 120px;
+}
+
+.submit-button {
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+
+@media (min-width: 769px) {
+  .ads-container {
+    margin: 0 120px; /* Reduced padding for medium windows */
+  }
+}
+
+@media (max-width: 768px) {
+  .ads-container {
+    margin: 0 50px; /* Smaller padding for small windows */
+  }
+}
+
+@media (max-width: 480px) {
+  .ads-container {
+    margin: 0 30px; /* Minimum padding for very small windows */
+  }
+}

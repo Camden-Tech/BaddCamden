@@ -1,0 +1,40 @@
+background {
+    position: absolute;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 300%;
+    width: 100%;
+    z-index: -1;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+main {
+    position: relative;
+    z-index: 1;
+    margin: 20px auto 0 auto; /* Top margin adjusted for header, auto margins for centering */
+    padding: 80px;
+    height: 1200px;
+    width: 70%; /* Adjust based on preference */
+    max-width: 1200px; /* Maximum width to prevent overly wide content on large screens */
+    background: #FFFFFF; /* Solid white background */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.content-section {
+    margin-bottom: 20px;
+    text-align: center; /* Center text within sections */
+}
+
+/* Additional styles for buttons, images, etc. */
